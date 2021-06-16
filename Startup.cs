@@ -28,9 +28,9 @@ namespace MyKoloWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ApplicationDbContext>(options=> 
+            services.AddDbContext<ApplicationDbContext>(options=>
             {
-                options.UseSqlServer("");
+                options.UseSqlServer(Configuration["ConnectionStrings:myKoloDb"]);                         
             });
         }
         
