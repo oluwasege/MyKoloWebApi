@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MyKoloWebApi.Controllers
+namespace MyKoloWebApi.Data
 {
-    public class UsersController
+    public class ApplicationDbContext
     {
-       
+        
     }
 }
