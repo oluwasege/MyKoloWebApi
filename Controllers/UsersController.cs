@@ -18,20 +18,13 @@ namespace MyKoloWebApi.Controllers
         {
             _context = context;
         }
-       [HttpPost]
-       public IActionResult AddUser(AddUserDto requiredUser)
-        {
-            User user = new User()
-            {
-                Id = Guid.NewGuid().ToString(),
-                UserName = requiredUser.UserName,
-                Password = requiredUser.Password,
-                Email = requiredUser.Email
-            };
-            _context.Users.Add(user);
-            _context.SaveChanges();
-            return Ok(user.Id);
-        }
+
+       //[HttpPost]
+       //[Route("add")]
+       //public IActionResult AddUser(AddUserDto requiredUser)
+       // {
+            
+       // }
 
         
 
