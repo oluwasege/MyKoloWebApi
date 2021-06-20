@@ -70,6 +70,6 @@ namespace MyKoloWebApi
             });
         }
 
-        ////HI
+        
     }
 }
